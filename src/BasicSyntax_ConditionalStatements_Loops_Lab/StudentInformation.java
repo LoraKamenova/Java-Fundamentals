@@ -7,8 +7,8 @@ public class StudentInformation {
         Scanner scanner = new Scanner(System.in);
 
         String name = scanner.nextLine();
-        Integer age = Integer.parseInt(scanner.nextLine());
-        Double grade = Double.parseDouble(scanner.nextLine());
+        int age = Integer.parseInt(scanner.nextLine());
+        double grade = Double.parseDouble(scanner.nextLine());
 
         System.out.printf("Name: %s, Age: %d, Grade: %.2f", name, age, grade);
     }
