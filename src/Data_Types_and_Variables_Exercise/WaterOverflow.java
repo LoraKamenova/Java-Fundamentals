@@ -7,7 +7,6 @@ public class WaterOverflow {
         Scanner scanner = new Scanner(System.in);
         int n = Integer.parseInt(scanner.nextLine());
 
-        boolean isOverflowing = false;
         int volume = 0;
 
         for (int i = 0; i < n; i++) {
