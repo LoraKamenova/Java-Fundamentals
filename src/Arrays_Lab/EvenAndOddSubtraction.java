@@ -3,7 +3,7 @@ package Arrays_Lab;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ReverseArrayOfStrings {
+public class EvenAndOddSubtraction {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -11,13 +11,16 @@ public class ReverseArrayOfStrings {
                 .stream(scanner.nextLine().split(" "))
                 .mapToInt(e -> Integer.parseInt(e)).toArray();
 
-        int sum = 0;
+        int evenSum = 0;
+        int oddSum = 0;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 == 0) {
-                sum += arr[i];
+                evenSum += arr[i];
+            } else {
+                oddSum += arr[i];
             }
         }
-        System.out.println(sum);
+        System.out.println(evenSum - oddSum);
     }
 }
