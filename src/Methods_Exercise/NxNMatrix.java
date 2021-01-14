@@ -10,12 +10,14 @@ public class NxNMatrix {
         rowLoop(num);
 
     }
+
     private static void rowLoop(int num){
         for (int i = 0; i < num; i++) {
             printMatrix(num);
             System.out.println();
         }
     }
+
     private static void printMatrix (int printNum){
         for (int i = 0; i < printNum; i++) {
             System.out.print(printNum + " ");
