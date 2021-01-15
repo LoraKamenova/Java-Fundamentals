@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 
 public class SumAdjacentEqualNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        List<Double> numbers = Arrays.stream(sc.nextLine().split(" "))
+        List<Double> numbers = Arrays.stream(scanner.nextLine().split(" "))
                 .map(Double::parseDouble).collect(Collectors.toList());
 
         for (int i = 0; i < numbers.size() - 1; i++) {
