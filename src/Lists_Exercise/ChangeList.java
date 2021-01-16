@@ -15,6 +15,7 @@ public class ChangeList {
         String input = "";
 
         while (!"end".equals(input = scanner.nextLine())) {
+
             String[] data = input.split("\\s+");
             if ("Delete".equals(data[0])) {
                 int num = Integer.parseInt(data[1]);
