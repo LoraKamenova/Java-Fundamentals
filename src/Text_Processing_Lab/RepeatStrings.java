@@ -12,7 +12,6 @@ public class RepeatStrings {
         for (String s : input) {
             result.append(s.repeat(s.length()));
         }
-
         System.out.println(result);
     }
 }
